@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.viewpager2.widget.ViewPager2
 import com.example.whatsappclone.core.presentation.BaseFragment
 import com.example.whatsappclone.databinding.FragmentHomeBinding
 import com.example.whatsappclone.home.domain.HomeFragmentViewModel
@@ -30,7 +31,6 @@ class HomeFragment : BaseFragment() {
         viewModel.populateTabsTextList()
         binding.viewPagerHome.adapter = HomeViewPagerAdapter(fragment = this@HomeFragment, tabCount = 3)
         TabLayoutMediator(binding.tabLayoutHome, binding.viewPagerHome) { tab, position ->
-            Log.i("text", "getTabText ---> ${viewModel.getTabText(position)}")
             tab.text = viewModel.getTabText(position)
         }.attach()
     }
