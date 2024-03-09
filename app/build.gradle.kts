@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -61,6 +62,16 @@ dependencies {
     // hilt dependencies
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-android-compiler:2.48")
+
+    // firebase dependencies
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    //Cloud Firestore
+    implementation("com.google.firebase:firebase-firestore")
+
+    // Glide Dependency
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
 
 kapt {

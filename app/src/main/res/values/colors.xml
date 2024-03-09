@@ -4,5 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white_70">#B3FFFFFF</color>
     <color name="light_gray">#33DCD0D0</color>
+    <color name="dark_gray">#B3DCD0D0</color>
+    <color name="black_50">#80000000</color>
+    <color name="white_10">#1AFFFFFF</color>
     <color name="primary">#128C70</color>
+    <color name="light_blue">#0CAEF7</color>
 </resources>

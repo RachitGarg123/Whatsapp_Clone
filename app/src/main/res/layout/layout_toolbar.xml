@@ -24,7 +24,7 @@
         android:id="@+id/ivCamera"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ivSearch"
-        android:src="@drawable/outline_camera_24"
+        android:src="@drawable/outline_camera_23"
         android:paddingHorizontal="@dimen/_10sdp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -33,7 +33,7 @@
         android:id="@+id/ivSearch"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ivOverflow"
-        android:src="@drawable/outline_search_24"
+        android:src="@drawable/outline_search_23"
         android:paddingHorizontal="@dimen/_5sdp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -42,7 +42,7 @@
         android:id="@+id/ivOverflow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/overflow_24"
+        android:src="@drawable/overflow_white_23"
         android:paddingHorizontal="@dimen/_5sdp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

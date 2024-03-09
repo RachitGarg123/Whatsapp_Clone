@@ -3,4 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="whatsapp">WhatsApp</string>
+    <string name="status">Status</string>
+    <string name="my_status">My Status</string>
+    <string name="tap_to_add_status_update">Tap to add status update</string>
+    <string name="viewed_updates">Viewed updates</string>
+    <string name="muted_updates">Muted updates</string>
+    <string name="channels">Channels</string>
+    <string name="channels_msg_body">Stay updated on topics that matter to you. Find channels to follow below</string>
+    <string name="explore_more">Explore More</string>
 </resources>

@@ -1,7 +1,6 @@
 package com.example.whatsappclone.home.domain
 
 import androidx.lifecycle.ViewModel
-import com.example.whatsappclone.home.data.HomeRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
