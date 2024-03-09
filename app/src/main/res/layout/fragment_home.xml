@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/primary" />
 
         <com.google.android.material.tabs.TabLayout
             android:layout_width="0dp"
@@ -23,7 +24,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbarHome"
-            android:id="@+id/tabLayoutHome" />
+            android:id="@+id/tabLayoutHome"
+            android:background="@color/primary"
+            app:tabTextColor="@color/white_70"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorFullWidth="true"
+            android:elevation="@dimen/_10sdp"/>
 
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="0dp"

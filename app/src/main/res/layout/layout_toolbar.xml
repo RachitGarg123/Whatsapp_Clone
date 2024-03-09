@@ -2,7 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    android:paddingTop="@dimen/_14sdp"
+    android:elevation="@dimen/_10sdp">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -10,7 +13,10 @@
         android:id="@+id/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/whatsapp"/>
+        android:text="@string/whatsapp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginStart="@dimen/_10sdp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
@@ -18,7 +24,8 @@
         android:id="@+id/ivCamera"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ivSearch"
-        android:src="@drawable/outline_camera_alt_24"/>
+        android:src="@drawable/outline_camera_alt_24"
+        android:paddingHorizontal="@dimen/_10sdp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
@@ -26,7 +33,8 @@
         android:id="@+id/ivSearch"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ivOverflow"
-        android:src="@drawable/outline_search_24"/>
+        android:src="@drawable/outline_search_24"
+        android:paddingHorizontal="@dimen/_5sdp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
@@ -34,6 +42,7 @@
         android:id="@+id/ivOverflow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/overflow_24"/>
+        android:src="@drawable/overflow_24"
+        android:paddingHorizontal="@dimen/_5sdp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
