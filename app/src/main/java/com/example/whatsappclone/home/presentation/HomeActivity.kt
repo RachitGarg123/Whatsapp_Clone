@@ -6,7 +6,9 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.whatsappclone.R
 import com.example.whatsappclone.core.presentation.BaseActivity
 import com.example.whatsappclone.databinding.ActivityHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : BaseActivity() {
 
     private lateinit var binding: ActivityHomeBinding

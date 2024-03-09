@@ -8,14 +8,30 @@
         android:layout_height="match_parent"
         tools:context=".home.presentation.HomeFragment">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
+        <include
+            layout="@layout/layout_toolbar"
+            android:id="@+id/toolbarHome"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvHello"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarHome"
+            android:id="@+id/tabLayoutHome" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayoutHome"
+            android:id="@+id/viewPagerHome"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
