@@ -13,7 +13,7 @@ import com.example.whatsappclone.databinding.AdapterHomeChatsBinding
 import com.example.whatsappclone.home.data.dto.ChatInfo
 import com.example.whatsappclone.home.data.enums.MessageStatus
 
-class HomeChatAdapter: RecyclerView.Adapter<HomeChatAdapter.ChatsViewHolder>() {
+class HomeChatAdapter(private val openChat: (ChatInfo)-> Unit): RecyclerView.Adapter<HomeChatAdapter.ChatsViewHolder>() {
 
     private val chatInfoList: MutableList<ChatInfo> = mutableListOf()
 
@@ -56,6 +56,9 @@ class HomeChatAdapter: RecyclerView.Adapter<HomeChatAdapter.ChatsViewHolder>() {
                 .into(binding.ivProfile)
             binding.tvNumberOfUnseenMessages.text = chatInfoList[position].numberOfUnseenMessages
             binding.tvLastMessageTime.text = chatInfoList[position].lastMessageTime
+            binding.root.setOnClickListener {
+                openChat(chatInfoList[position])
+            }
         }
     }
 }

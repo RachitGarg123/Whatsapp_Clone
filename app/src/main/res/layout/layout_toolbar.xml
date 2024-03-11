@@ -1,48 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/primary"
-    android:paddingTop="@dimen/_14sdp"
-    android:elevation="@dimen/_10sdp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/whatsapp"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15ssp"
-        android:layout_marginStart="@dimen/_10sdp"/>
+        android:background="@color/primary"
+        android:paddingTop="@dimen/_14sdp"
+        android:elevation="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ivCamera"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ivSearch"
-        android:src="@drawable/outline_camera_23"
-        android:paddingHorizontal="@dimen/_10sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBackToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/filled_back_arrow_white_24"
+            android:paddingEnd="@dimen/_5sdp"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ivSearch"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ivOverflow"
-        android:src="@drawable/outline_search_23"
-        android:paddingHorizontal="@dimen/_5sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivProfileToolbar"
+            app:layout_constraintStart_toEndOf="@id/ivBackToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingEnd="@dimen/_5sdp"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ivOverflow"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/overflow_white_23"
-        android:paddingHorizontal="@dimen/_5sdp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitleToolbar"
+            app:layout_constraintStart_toEndOf="@id/ivProfileToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/whatsapp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivCameraToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivSearchToolbar"
+            android:src="@drawable/outline_camera_23"
+            android:paddingHorizontal="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivSearchToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivOverflowToolbar"
+            android:src="@drawable/outline_search_23"
+            android:paddingHorizontal="@dimen/_5sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivOverflowToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/overflow_white_23"
+            android:paddingHorizontal="@dimen/_5sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

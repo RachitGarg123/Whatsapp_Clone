@@ -1,5 +1,5 @@
 package com.example.whatsappclone.home.domain.constants
 
 object HomeConstants {
-    const val chatInfo: String = "chat-info"
+    const val CHAT_INFO: String = "chat-info"
 }

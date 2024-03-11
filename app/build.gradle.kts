@@ -4,6 +4,7 @@ plugins {
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
     id("com.google.gms.google-services")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -72,6 +73,9 @@ dependencies {
 
     // Glide Dependency
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    //agora chat
+    implementation("io.agora.rtc:chat-sdk:1.2.1")
 }
 
 kapt {

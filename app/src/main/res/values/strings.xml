@@ -11,4 +11,5 @@
     <string name="channels">Channels</string>
     <string name="channels_msg_body">Stay updated on topics that matter to you. Find channels to follow below</string>
     <string name="explore_more">Explore More</string>
+    <string name="message">Message</string>
 </resources>
